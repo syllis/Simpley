@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 # Function to calculate volume
 def calculate_isipadu(bentuk, jejari=0, tinggi=0, panjang=0, lebar=0, sendeng=0):
@@ -239,5 +239,5 @@ def calculate():
             </div>
         """
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
